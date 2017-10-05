@@ -76,16 +76,17 @@
         <LinearLayout
             android:id="@+id/advOption"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights">
 
                 <Spinner
                     android:id="@+id/genreDrop"
@@ -124,7 +125,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -185,7 +186,8 @@
             app:layout_constraintHorizontal_bias="0.521"
             app:layout_constraintLeft_toRightOf="@+id/addWatch"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="ButtonStyle,NestedWeights" />
 
         <Button
             android:id="@+id/addWatch"
@@ -199,7 +201,8 @@
             android:text="@string/add_to_watched_list"
             android:textSize="12sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/genreDrop" />
+            app:layout_constraintTop_toBottomOf="@+id/genreDrop"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
 </LinearLayout>
